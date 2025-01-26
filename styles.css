@@ -1,0 +1,156 @@
+/* 
+========================
+Algemeen
+========================
+*/
+
+* {
+    margin: 0;
+}
+
+body {
+
+    color: black;
+    background-color: #2E8B57;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    /* Dit zorgt er samen met margin-top voor dat de footer aan de onderkant blijft zitten */
+}
+
+h1 {
+
+    padding: 0.50em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    padding: 0.75em;
+}
+
+
+p {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    padding: 1em;
+}
+
+header {
+
+    display: flex;
+    flex-direction: column;
+    /* Door colum gaat alles onder elkaar staan. In dit geval de linkjes die onder de h1 gaat staan. */
+    align-items: center;
+    /* Hierdoor staan de linkjes naar andere pagina's en de h1 in het midden */
+    justify-content: center;
+    padding: 1.5em;
+}
+
+main {
+
+    margin: 2em;
+    padding: 2em;
+}
+
+footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8em;
+    margin-top: auto;
+    /* Door youtube video heb ik dit gebruikt */
+}
+
+header,
+main,
+footer {
+
+    color: black;
+    background-color: #eeebe0;
+    border-radius: 0.5em;
+
+}
+
+
+nav ul {
+
+    list-style-type: none;
+    padding: 1em;
+    display: flex;
+    gap: 5em;
+    /* Hierdoor komt er ruimte tussen de linkjes */
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+
+    background-color: #2E8B57;
+    color: white;
+    /* Linkjes veranderen als je er met je muis overheen gaat */
+    border-radius: 0.2em;
+    padding: 0.25em;
+}
+
+
+/*
+========================
+Homepagina
+========================
+*/
+
+.homepagina img {
+
+    width: 5em;
+    height: auto;
+    padding-left: 1em;
+
+}
+
+/*
+========================
+Afleveringen pagina
+========================
+*/
+
+
+.afleveringen h2 {
+    display: flex;
+    align-items: center;
+    /* Dit zorgt ervoor dat de titels van de podcast verticaal worden uitgelijnd naast de img */
+}
+
+.afleveringen img {
+    height: 8em;
+    width: auto;
+    border-radius: 1.5em;
+    padding-right: 1.5em;
+}
+
+
+/*
+========================
+Over Ons pagina
+========================
+*/
+
+.overons img {
+    width: auto;
+    height: 30em;
+    border-radius: 3em;
+    padding: 2em;
+}
